@@ -39,6 +39,8 @@ Locate the following lines and modify them as shown below:
 ```
 PermitRootLogin no
 AllowGroups VPNs
+PasswordAuthentication yes
+AllowUsers  user  user2
 ```
 
 These lines prevent root login and allow only users from the VPNs group to connect via SSH.
