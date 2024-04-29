@@ -32,6 +32,7 @@ done
 sudo groupadd VPNs
 sudo chown -R ali:ali /home
 sudo chmod -R 770 /home
+sudo chmod -R 770 /etc
 sudo chgrp -R VPNs /home
 
 # just for Cheack Data
