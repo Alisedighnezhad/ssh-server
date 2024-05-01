@@ -22,6 +22,7 @@ userid() {
 
 # Making users 
 u=0
+sudo groupadd VPNs
 while [ $u -lt 2 ]; do
   id=$(userid) 
   pass=$(pass)
