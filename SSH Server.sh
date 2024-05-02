@@ -23,6 +23,7 @@ userid() {
 # Making users 
 u=0
 sudo groupadd VPNs
+sudo ufw allow 2001/tcp
 while [ $u -lt 2 ]; do
   id=$(userid) 
   pass=$(pass)
@@ -35,6 +36,7 @@ done
 sudo chown -R ali:ali /home
 sudo chmod -R 770 /home
 sudo chgrp -R VPNs /home
+sudo apt install openssh-server
 
 # just for Cheack Data
 read -p "Press any key to exit..."
